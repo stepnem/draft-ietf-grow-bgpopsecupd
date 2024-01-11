@@ -1,0 +1,198 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-01-11T00:13:16.217288+00:00",
+  "repo": "ichdasich/draft-fiebig-grow-bgpopsecupd",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOKcyvv850nwyp",
+      "title": "Add note on honoring GSHUT on IXPs",
+      "url": "https://github.com/ichdasich/draft-fiebig-grow-bgpopsecupd/issues/1",
+      "state": "OPEN",
+      "author": "ichdasich",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "At the moment the draft does not discuss honoring GSHUT on IXPs.\r\n\r\nAs this is crucial for being able to drain traffic, adding a note might be useful.",
+      "createdAt": "2023-10-23T08:00:57Z",
+      "updatedAt": "2023-10-23T08:00:57Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 2,
+      "id": "I_kwDOKcyvv850nxNw",
+      "title": "Discuss use of lpref on IXP RS",
+      "url": "https://github.com/ichdasich/draft-fiebig-grow-bgpopsecupd/issues/2",
+      "state": "OPEN",
+      "author": "ichdasich",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Adding a note on the use of lpref on IXPs that prevent draining traffic (related to #1) might make sense.",
+      "createdAt": "2023-10-23T08:02:00Z",
+      "updatedAt": "2023-10-23T08:02:00Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 3,
+      "id": "I_kwDOKcyvv850nx46",
+      "title": "Add note on need for individual judgement",
+      "url": "https://github.com/ichdasich/draft-fiebig-grow-bgpopsecupd/issues/3",
+      "state": "OPEN",
+      "author": "ichdasich",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "As noted by GD, it is still a \"my network, my rules\" thing. The introduction should explicitly mention that the BP should be considered by individual operators, and there may be very good reasons to deviate, e.g., limited vendor support.",
+      "createdAt": "2023-10-23T08:03:24Z",
+      "updatedAt": "2023-10-23T08:03:24Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOKcyvv850nyW8",
+      "title": "Discussing MED based oscilation (RFC7964)",
+      "url": "https://github.com/ichdasich/draft-fiebig-grow-bgpopsecupd/issues/4",
+      "state": "OPEN",
+      "author": "ichdasich",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "With RS MED can lead to route oscillation overloading speakers. This is discussed in RFC7964, and a note on monitoring for that/precautions might be useful.",
+      "createdAt": "2023-10-23T08:04:27Z",
+      "updatedAt": "2023-10-23T08:04:27Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 5,
+      "id": "I_kwDOKcyvv851CI_5",
+      "title": "Expand Community filtering",
+      "url": "https://github.com/ichdasich/draft-fiebig-grow-bgpopsecupd/issues/5",
+      "state": "OPEN",
+      "author": "ichdasich",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Martin Pels notes:\r\n- I think extended (RFC4360) communities should also be added here.\r\n- Another point to add in this section is scrubbing communities from a received route if the number of attached communities is excessively high (e.g. > 100).",
+      "createdAt": "2023-10-26T12:50:13Z",
+      "updatedAt": "2023-10-26T12:50:13Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 6,
+      "id": "I_kwDOKcyvv851CJSB",
+      "title": "Adjust attribute scrubbing",
+      "url": "https://github.com/ichdasich/draft-fiebig-grow-bgpopsecupd/issues/6",
+      "state": "OPEN",
+      "author": "ichdasich",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Martin Pels notes:\r\n\r\n- Add MAY for scrubbing of attributes\r\n\r\n\"operators MAY opt to scrub all BGP attributes known to cause service \r\ndisruptions\"\r\n\r\nI would suggest replacing the word \"all\" with \"specific\", or to add a \r\nline explicitly clarifying not to scrub unknown transitive attributes.",
+      "createdAt": "2023-10-26T12:50:53Z",
+      "updatedAt": "2023-10-26T12:50:53Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 7,
+      "id": "I_kwDOKcyvv852ApkW",
+      "title": "Add to 7.2.2 or similar that using communities to signal validation status is a bad idea",
+      "url": "https://github.com/ichdasich/draft-fiebig-grow-bgpopsecupd/issues/7",
+      "state": "OPEN",
+      "author": "ichdasich",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "appending a community to signal the validation status of a prefix is generally considered a bad idea",
+      "createdAt": "2023-11-06T19:09:03Z",
+      "updatedAt": "2023-11-07T17:27:17Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "job",
+          "authorAssociation": "NONE",
+          "body": "Yes.\r\n\r\nI have plans to specifically address this issue in a new internet-draft\r\n\u201cAssociating validation states with BGP communities considered harmful\u201d.\r\n\r\nI think it\u2019s worth spending a few pages on this on *why* exactly it\u2019s a bad\r\nidea. Perhaps useful to refer to that to-be-written doc instead of pulling\r\nin walls of text?\r\n",
+          "createdAt": "2023-11-06T19:16:12Z",
+          "updatedAt": "2023-11-06T19:16:12Z"
+        },
+        {
+          "author": "ichdasich",
+          "authorAssociation": "OWNER",
+          "body": "Makes sense; Will keep an eye out for the draft and use a template reference until it is out.",
+          "createdAt": "2023-11-07T17:27:17Z",
+          "updatedAt": "2023-11-07T17:27:17Z"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "id": "I_kwDOKcyvv856VG8y",
+      "title": "Discuss idempotency for automation/config updates",
+      "url": "https://github.com/ichdasich/draft-fiebig-grow-bgpopsecupd/issues/8",
+      "state": "OPEN",
+      "author": "ichdasich",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-12-21T12:40:43Z",
+      "updatedAt": "2023-12-21T12:40:43Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
+  "pulls": []
+}
